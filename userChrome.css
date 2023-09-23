@@ -1,0 +1,69 @@
+/* 导航栏整体样式 */
+#nav-bar {
+
+    margin-top: 10px !important;
+    /* Top drag area */
+
+    margin-left: 0px !important;
+    /* hidden leftTop drag area in Fullscreen mode*/
+
+    border-right: 140px solid var(--toolbar-bgcolor);
+
+}
+
+/* 私密模式 */
+:root[privatebrowsingmode="temporary"] #nav-bar {
+
+    border-right: 180px solid var(--toolbar-bgcolor) !important;
+
+}
+
+/* move down to hidden titlebar */
+
+#titlebar {
+
+    margin-bottom: -40px !important;
+}
+
+
+/* move down 3 button on rightTop */
+
+.titlebar-buttonbox-container {
+
+    margin-bottom: -5px !important;
+
+}
+
+:root[sizemode="maximized"] .titlebar-buttonbox-container {
+
+    margin-bottom: -5px !important;
+
+}
+
+/* move down private icon */
+
+.private-browsing-indicator {
+
+    margin-bottom: -8px !important;
+
+}
+
+:root[sizemode="maximized"] .private-browsing-indicator {
+
+    margin-bottom: -8px !important;
+
+}
+
+/* hidden horizontal tabbar on top */
+
+#tabbrowser-tabs[orient="horizontal"] {
+
+    visibility: collapse !important;
+
+}
+
+#sidebar-box[sidebarcommand="_0ad88674-2b41-4cfb-99e3-e206c74a0076_-sidebar-action"] sidebarheader {
+
+    visibility: collapse !important;
+
+}
